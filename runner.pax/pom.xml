@@ -79,6 +79,14 @@
 			<artifactId>pax-web-jsp</artifactId>
 			<version>0.8.1</version>
 		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.web.nls.pl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.web.nls.fr</artifactId>
+		</dependency>
 	</dependencies>
 
 </project>
