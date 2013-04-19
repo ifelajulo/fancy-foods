@@ -25,6 +25,14 @@
 					</execution>
 				</executions>
 				<configuration>
+					<instructions>
+						<Bundle-ClassPath>WEB-INF/classes</Bundle-ClassPath>
+						<Web-ContextPath>/fancyfoods.web</Web-ContextPath>
+						<Import-Package>
+							javax.servlet,
+							javax.servlet.http
+						</Import-Package>
+					</instructions>
 					<supportedProjectTypes>
 						<supportedProjectType>war</supportedProjectType>
 					</supportedProjectTypes>
