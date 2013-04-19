@@ -7,4 +7,12 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>fancyfoods.web</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-servlet_2.5_spec</artifactId>
+		</dependency>
+	</dependencies>
+
 </project>
