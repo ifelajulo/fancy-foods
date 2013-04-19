@@ -17,12 +17,19 @@
 	</properties>
 
 	<modules>
-		<module>runner.pax</module>
 		<module>web</module>
+		<module>runner.pax</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- Internal -->
+			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.web</artifactId>
+				<version>${project.version}</version>
+				<type>war</type>
+			</dependency>
 			<dependency>
 				<groupId>org.apache.geronimo.specs</groupId>
 				<artifactId>geronimo-servlet_2.5_spec</artifactId>

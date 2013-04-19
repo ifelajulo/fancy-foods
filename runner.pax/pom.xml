@@ -11,11 +11,19 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.web</artifactId>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-servlet_2.5_spec</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.apache.aries</groupId>
 			<artifactId>org.apache.aries.util</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.aries.application</groupId>
 			<artifactId>org.apache.aries.application.utils</artifactId>
