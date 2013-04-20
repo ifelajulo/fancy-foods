@@ -8,7 +8,7 @@ import java.util.List;
 import fancyfoods.offers.CurrentOffers;
 import fancyfoods.offers.SpecialOffer;
 
-public class OfferAgregator implements CurrentOffers {
+public class OfferAggregator implements CurrentOffers {
 
 	private static final int MAX_OFFERS = 4;
 	private List<SpecialOffer> offers;
