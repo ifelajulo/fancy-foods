@@ -7,6 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>fancyfoods.department.chocolate</artifactId>
+	<name>Fancy Foods - Department - Chocolate</name>
 	<packaging>bundle</packaging>
 	<build>
 		<plugins>

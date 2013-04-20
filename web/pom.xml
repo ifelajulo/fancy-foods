@@ -7,6 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>fancyfoods.web</artifactId>
+	<name>Fancy Foods - Web</name>
 	<packaging>war</packaging>
 
 	<build>
