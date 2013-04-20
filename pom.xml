@@ -21,11 +21,29 @@
 		<module>runner.pax</module>
 		<module>web.nls.fr</module>
 		<module>web.nls.pl</module>
+		<module>api</module>
+		<module>department.chocolate</module>
+		<module>business</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
 			<!-- Internal -->
+			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.business</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.department.chocolate</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.danielpacak</groupId>
 				<artifactId>fancyfoods.web</artifactId>

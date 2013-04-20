@@ -12,6 +12,18 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.business</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.department.chocolate</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
 			<artifactId>fancyfoods.web</artifactId>
 			<type>war</type>
 		</dependency>
