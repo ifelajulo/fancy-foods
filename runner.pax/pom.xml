@@ -20,6 +20,10 @@
 		</dependency>
 		<dependency>
 			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.datasource</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
 			<artifactId>fancyfoods.department.chocolate</artifactId>
 		</dependency>
 		<dependency>
@@ -103,6 +107,12 @@
 		<dependency>
 			<groupId>com.danielpacak</groupId>
 			<artifactId>fancyfoods.web.nls.fr</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+			<!-- FIXME Check the latest version -->
+			<version>10.9.1.0</version>
 		</dependency>
 	</dependencies>
 

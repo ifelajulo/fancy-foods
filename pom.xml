@@ -24,6 +24,7 @@
 		<module>api</module>
 		<module>business</module>
 		<module>department.chocolate</module>
+		<module>datasource</module>
 		<module>web</module>
 		<module>web.nls.fr</module>
 		<module>web.nls.pl</module>
@@ -36,6 +37,11 @@
 			<dependency>
 				<groupId>com.danielpacak</groupId>
 				<artifactId>fancyfoods.api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.datasource</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
