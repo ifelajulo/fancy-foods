@@ -6,8 +6,8 @@
 		<artifactId>fancyfoods</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>fancyfoods.persistence</artifactId>
-	<name>Fancy Foods - Persistence</name>
+	<artifactId>fancyfoods.config.logback</artifactId>
+	<name>Fancy Foods - Config - Logback</name>
 	<packaging>bundle</packaging>
 
 	<build>
@@ -18,29 +18,11 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Meta-Persistence>META-INF/persistence.xml</Meta-Persistence>
-						<Private-Package>fancyfoods.persistence</Private-Package>
-						<Import-Package>
-							fancyfoods.api,
-							fancyfoods.food,
-							javax.persistence,
-							org.osgi.service.blueprint
-						</Import-Package>
+						<Fragment-Host>ch.qos.logback.classic</Fragment-Host>
 					</instructions>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
-	<dependencies>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.geronimo.specs</groupId>
-			<artifactId>geronimo-jpa_2.0_spec</artifactId>
-		</dependency>
-	</dependencies>
 
 </project>

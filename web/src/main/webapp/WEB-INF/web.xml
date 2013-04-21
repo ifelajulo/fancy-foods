@@ -7,6 +7,15 @@
 		<servlet-name>SayHelloJNDI</servlet-name>
 		<servlet-class>fancyfoods.web.SayHelloJNDI</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>ViewStatusMessages</servlet-name>
+		<servlet-class>ch.qos.logback.classic.ViewStatusMessagesServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewStatusMessages</servlet-name>
+		<url-pattern>/lbClassicStatus</url-pattern>
+	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>SayHello</servlet-name>
 		<url-pattern>/SayHello</url-pattern>

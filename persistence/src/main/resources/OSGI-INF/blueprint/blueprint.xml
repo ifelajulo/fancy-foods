@@ -6,7 +6,7 @@
 	</bean>
 	<service ref="inventory" interface="fancyfoods.food.Inventory" />
 
-	<bean id="populator" class="fancyfoods.persistence.InventoryPopulater"
+	<bean id="populator" class="fancyfoods.persistence.InventoryPopulator"
 		init-method="populate" activation="eager">
 		<property name="inventory" ref="inventory" />
 	</bean>

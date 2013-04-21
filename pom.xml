@@ -31,11 +31,17 @@
 		<module>web.nls.fr</module>
 		<module>web.nls.pl</module>
 		<module>runner.pax</module>
+		<module>config.logback</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
 			<!-- Internal -->
+			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.config.logback</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.danielpacak</groupId>
 				<artifactId>fancyfoods.api</artifactId>
@@ -147,6 +153,19 @@
 		</pluginManagement>
 	</build>
 
+	<repositories>
+		<repository>
+			<id>com.springsource.repository.bundles.release</id>
+			<name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/release</url>
+		</repository>
+		<repository>
+			<id>com.springsource.repository.bundles.external</id>
+			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/external</url>
+		</repository>
+	</repositories>
+
 	<distributionManagement>
 		<repository>
 			<id>localhost-release-repo</id>
@@ -154,4 +173,6 @@
 			<url>file:///C:/development/mavenReleaseRepository</url>
 		</repository>
 	</distributionManagement>
+
+
 </project>

@@ -8,41 +8,25 @@
 	</parent>
 	<artifactId>fancyfoods.runner.pax</artifactId>
 	<packaging>pom</packaging>
+	<properties>
+		<logback.version>1.0.10</logback.version>
+	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.business</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.datasource</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.persistence</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.department.chocolate</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.department.cheese</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.web</artifactId>
-			<type>war</type>
-		</dependency>
+		<!-- JEE API -->
 		<dependency>
 			<groupId>org.apache.geronimo.specs</groupId>
 			<artifactId>geronimo-servlet_2.5_spec</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-jpa_2.0_spec</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-jta_1.1_spec</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.apache.aries</groupId>
 			<artifactId>org.apache.aries.util</artifactId>
@@ -74,20 +58,68 @@
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.aries.proxy</groupId>
-			<artifactId>org.apache.aries.proxy</artifactId>
-			<version>[1.0.0,2.0.0)</version>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.resolver.obr</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.resolver.noop</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.default.local.platform</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.aries.application</groupId>
 			<artifactId>org.apache.aries.application.runtime</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+		<!-- Apache Aries Transaction -->
 		<dependency>
-			<groupId>org.ops4j.pax.logging</groupId>
-			<artifactId>pax-logging-api</artifactId>
-			<version>1.7.0</version>
+			<groupId>org.apache.aries.transaction</groupId>
+			<artifactId>org.apache.aries.transaction.manager</artifactId>
+			<version>1.0.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.transaction</groupId>
+			<artifactId>org.apache.aries.transaction.blueprint</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.aries.proxy</groupId>
+			<artifactId>org.apache.aries.proxy</artifactId>
+			<version>[1.0.0,2.0.0)</version>
+		</dependency>
+		<!-- Logger -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.config.logback</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.enterprise</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.ops4j.pax.web</groupId>
 			<artifactId>pax-web-jetty-bundle</artifactId>
@@ -124,14 +156,6 @@
 		</dependency>
 		<!-- Apache Aries - JPA -->
 		<dependency>
-			<groupId>org.apache.geronimo.specs</groupId>
-			<artifactId>geronimo-jpa_2.0_spec</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.geronimo.specs</groupId>
-			<artifactId>geronimo-jta_1.1_spec</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.aries.jpa</groupId>
 			<artifactId>org.apache.aries.jpa.api</artifactId>
 			<version>1.0.0</version>
@@ -156,10 +180,12 @@
 			<artifactId>openjpa</artifactId>
 			<version>2.0.0</version>
 		</dependency>
+		<!-- <dependency> <groupId>net.sourceforge.serp</groupId> <artifactId>serp</artifactId> 
+			<version>1.14.1</version> </dependency> -->
 		<dependency>
 			<groupId>net.sourceforge.serp</groupId>
-			<artifactId>serp</artifactId>
-			<version>1.14.1</version>
+			<artifactId>com.springsource.serp</artifactId>
+			<version>1.13.1</version>
 		</dependency>
 		<!-- Apache Commons -->
 		<dependency>
@@ -167,6 +193,37 @@
 			<artifactId>commons-lang</artifactId>
 			<version>2.5</version>
 		</dependency>
+		<!-- Internal -->
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.business</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.datasource</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.persistence</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.department.chocolate</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.department.cheese</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.web</artifactId>
+			<type>war</type>
+		</dependency>
+
 	</dependencies>
 
 </project>
