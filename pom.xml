@@ -24,12 +24,13 @@
 		<module>api</module>
 		<module>business</module>
 		<module>department.chocolate</module>
+		<module>department.cheese</module>
 		<module>datasource</module>
+		<module>persistence</module>
 		<module>web</module>
 		<module>web.nls.fr</module>
 		<module>web.nls.pl</module>
 		<module>runner.pax</module>
-		<module>persistence</module>
 	</modules>
 
 	<dependencyManagement>
@@ -58,6 +59,11 @@
 			<dependency>
 				<groupId>com.danielpacak</groupId>
 				<artifactId>fancyfoods.department.chocolate</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.department.cheese</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>

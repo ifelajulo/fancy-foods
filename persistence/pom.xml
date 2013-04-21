@@ -20,6 +20,11 @@
 					<instructions>
 						<Meta-Persistence>META-INF/persistence.xml</Meta-Persistence>
 						<Private-Package>fancyfoods.persistence</Private-Package>
+						<Import-Package>
+							fancyfoods.api,
+							fancyfoods.food,
+							javax.persistence
+						</Import-Package>
 					</instructions>
 				</configuration>
 			</plugin>

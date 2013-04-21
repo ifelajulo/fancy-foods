@@ -6,8 +6,9 @@
 		<artifactId>fancyfoods</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>fancyfoods.api</artifactId>
-	<name>Fancy Foods - API</name>
+	<artifactId>fancyfoods.department.cheese</artifactId>
+	<name>Fancy Foods - Department - Cheese</name>
+
 	<packaging>bundle</packaging>
 	<build>
 		<plugins>
@@ -17,15 +18,23 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Export-Package>
+						<Import-Package>
 							fancyfoods.api,
 							fancyfoods.food,
-							fancyfoods.offers
-						</Export-Package>
+							fancyfoods.offers,
+							org.osgi.service.blueprint
+						</Import-Package>
 					</instructions>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.api</artifactId>
+		</dependency>
+	</dependencies>
 
 </project>
