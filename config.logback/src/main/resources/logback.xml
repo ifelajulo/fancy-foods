@@ -14,6 +14,9 @@
 	</appender>
 
 	<logger name="org.eclipse.jetty.util.log" level="INFO" />
+	<logger name="org.apache.aries.jpa" level="INFO" />
+	<logger name="org.apache.aries.blueprint" level="INFO" />
+	<logger name="org.apache.aries.transaction" level="INFO" />
 
 	<root level="debug">
 		<appender-ref ref="STDOUT" />
