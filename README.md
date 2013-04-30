@@ -21,5 +21,5 @@ script, you'll see that it starts up the OSGi runtime (Apache Felix by default) 
 dependencies listed in [pom.xml](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/pom.xml)
 as OSGi bundles.
 
-To change the OSGi runtime simply edit [felix.sh](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/felix.sh)
-and set the `FRAMEWORK` environment variable to `Equinox`.
+To change the default OSGi runtime simply edit [felix.sh](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/felix.sh)
+and set the `FRAMEWORK` environment variable to [equinox](http://www.eclipse.org/equinox).
