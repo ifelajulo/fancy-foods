@@ -16,6 +16,10 @@ To get the application up and running on your local machine, follow these steps:
 7. If everything went well, you should see the application in your browser.
 
 Note that I'm using a different approach for running the sample application than presented in the book.
-If you take a look at `runner.pax/felix.sh script`, you'll see that it starts up the OSGi runtime
-(Apache Felix by default) and installs all dependencies listed in `runner.pax/pom.xml` as OSGi bundles.
-To change the OSGi runtime simply edit the `FRAMEWORK` environment variable to `Equinox`.
+If you take a look at  [this](https://github.com/danielpacak/fancy-foods/edit/master/runner.pax/felix.sh)
+script, you'll see that it starts up the OSGi runtime (Apache Felix by default) and installs all
+dependencies listed in [pom.xml](https://github.com/danielpacak/fancy-foods/edit/master/runner.pax/pom.xml)
+as OSGi bundles.
+
+To change the OSGi runtime simply edit [felix.sh](https://github.com/danielpacak/fancy-foods/edit/master/runner.pax/felix.sh)
+and set the `FRAMEWORK` environment variable to `Equinox`.
