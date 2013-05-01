@@ -1,4 +1,9 @@
-<web-app>
+<?xml version="1.0"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>Fancy Foods</display-name>
 	<servlet>
 		<servlet-name>SayHello</servlet-name>
 		<servlet-class>fancyfoods.web.SayHello</servlet-class>
@@ -8,9 +13,12 @@
 		<servlet-class>fancyfoods.web.SayHelloJNDI</servlet-class>
 	</servlet>
 	<servlet>
+		<servlet-name>BuyFood</servlet-name>
+		<servlet-class>fancyfoods.web.BuyFood</servlet-class>
+	</servlet>
+	<servlet>
 		<servlet-name>ViewStatusMessages</servlet-name>
-		<servlet-class>ch.qos.logback.classic.ViewStatusMessagesServlet
-		</servlet-class>
+		<servlet-class>ch.qos.logback.classic.ViewStatusMessagesServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ViewStatusMessages</servlet-name>
@@ -23,5 +31,9 @@
 	<servlet-mapping>
 		<servlet-name>SayHelloJNDI</servlet-name>
 		<url-pattern>/SayHelloJNDI</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BuyFood</servlet-name>
+		<url-pattern>/BuyFood</url-pattern>
 	</servlet-mapping>
 </web-app>

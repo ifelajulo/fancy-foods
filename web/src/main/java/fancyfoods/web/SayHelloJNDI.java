@@ -42,10 +42,12 @@ public class SayHelloJNDI extends HttpServlet {
 	}
 
 	private void writeRowForOffer(PrintWriter html, SpecialOffer offer) {
-		html.println("<tr>");
+		html.append("<tr>");
 		String description = offer.getDescription();
 		Food offerFood = offer.getOfferFood();
-		html.println("<td>" + offerFood.getName() + "</td>");
+		String name = offerFood.getName();
+		html.println("<td><a href=\"BuyFood?foodName="
+				+ name.replaceAll(" ", "%20") + "\">" + name + "</a></td>");
 		html.println("<td>" + offerFood.getPrice() + "</td>");
 		html.println("<td>" + description + "</td>");
 		html.println("</tr>");

@@ -23,6 +23,7 @@
 						<Import-Package>
 							fancyfoods.food,
 							javax.persistence,
+							org.slf4j,
 							org.osgi.service.blueprint
 						</Import-Package>
 					</instructions>
@@ -40,6 +41,12 @@
 			<groupId>org.apache.geronimo.specs</groupId>
 			<artifactId>geronimo-jpa_2.0_spec</artifactId>
 		</dependency>
+		<!-- Logger -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<!-- Testing -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

@@ -50,4 +50,11 @@ public class FoodImpl implements Food {
 		this.quantity = quantity;
 	}
 
+	@Override
+	public String toString() {
+		return new StringBuilder("There were ").append(getQuantityInStock())
+				.append(" packs of ").append(getName()).append(" in stock.")
+				.toString();
+	}
+
 }

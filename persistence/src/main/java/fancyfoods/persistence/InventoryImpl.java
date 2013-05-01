@@ -5,10 +5,15 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import fancyfoods.food.Food;
 import fancyfoods.food.Inventory;
 
 public class InventoryImpl implements Inventory {
+
+	private Logger logger = LoggerFactory.getLogger(InventoryImpl.class);
 
 	private EntityManager em;
 
@@ -46,6 +51,8 @@ public class InventoryImpl implements Inventory {
 		int currentLevel = food.getQuantityInStock();
 		int newLevel = currentLevel - quantity;
 		if (newLevel >= 0) {
+			logger.debug("Updating quatity of [{}] from [{}] to [{}]..", name,
+					currentLevel, newLevel);
 			food.setQuantityInStock(newLevel);
 			em.persist(food);
 			return newLevel;

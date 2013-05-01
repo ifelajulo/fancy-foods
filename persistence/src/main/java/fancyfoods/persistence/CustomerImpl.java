@@ -37,4 +37,11 @@ public class CustomerImpl implements Customer {
 		this.balance = balance;
 	}
 
+	@Override
+	public String toString() {
+		return new StringBuilder(getName()).append(" had a balance of $")
+				.append(getBalance()).append(" and a credit limit of $")
+				.append(getCreditLimit()).toString();
+	}
+
 }
