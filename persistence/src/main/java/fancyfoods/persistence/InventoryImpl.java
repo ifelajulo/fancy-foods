@@ -13,7 +13,7 @@ public class InventoryImpl implements Inventory {
 	private EntityManager em;
 
 	@Override
-	public Food getFood(String name) {
+	public FoodImpl getFood(String name) {
 		return em.find(FoodImpl.class, name);
 	}
 
@@ -39,11 +39,20 @@ public class InventoryImpl implements Inventory {
 		Number count = (Number) query.getSingleResult();
 		return count.intValue();
 	}
-	
+
 	@Override
 	public int removeStock(String name, int quantity) {
-		// TODO Auto-generated method stub
-		return 0;
+		FoodImpl food = getFood(name);
+		int currentLevel = food.getQuantityInStock();
+		int newLevel = currentLevel - quantity;
+		if (newLevel >= 0) {
+			food.setQuantityInStock(newLevel);
+			em.persist(food);
+			return newLevel;
+		} else {
+			throw new IllegalArgumentException("Cannot have level below 0: "
+					+ newLevel);
+		}
 	}
 
 	public void setEntityManager(EntityManager em) {

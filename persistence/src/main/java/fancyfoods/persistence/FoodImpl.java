@@ -46,7 +46,7 @@ public class FoodImpl implements Food {
 		return quantity;
 	}
 
-	public void setQuantity(int quantity) {
+	public void setQuantityInStock(int quantity) {
 		this.quantity = quantity;
 	}
 
