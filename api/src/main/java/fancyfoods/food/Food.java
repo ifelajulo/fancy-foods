@@ -1,4 +1,4 @@
-package fancyfoods.api;
+package fancyfoods.food;
 
 public interface Food {
 	String getName();

@@ -7,6 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>fancyfoods.runner.pax</artifactId>
+	<name>Fancy Foods - Runner - Pax</name>
 	<packaging>pom</packaging>
 	<properties>
 		<logback.version>1.0.10</logback.version>

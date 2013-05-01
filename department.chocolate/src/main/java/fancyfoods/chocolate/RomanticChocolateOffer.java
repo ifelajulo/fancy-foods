@@ -2,7 +2,7 @@ package fancyfoods.chocolate;
 
 import java.util.Calendar;
 
-import fancyfoods.api.Food;
+import fancyfoods.food.Food;
 import fancyfoods.offers.SpecialOffer;
 
 public class RomanticChocolateOffer implements SpecialOffer {

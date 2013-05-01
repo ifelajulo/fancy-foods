@@ -8,6 +8,9 @@
 	</parent>
 	<artifactId>fancyfoods.config.logback</artifactId>
 	<name>Fancy Foods - Config - Logback</name>
+	<description>
+		A bundle fragment attached to the Logback host bundle to configure the logger.
+	</description>
 	<packaging>bundle</packaging>
 
 	<build>

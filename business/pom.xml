@@ -19,7 +19,7 @@
 				<configuration>
 					<instructions>
 						<Import-Package>
-							fancyfoods.api,
+							fancyfoods.food,
 							fancyfoods.offers,
 							org.osgi.service.blueprint
 						</Import-Package>

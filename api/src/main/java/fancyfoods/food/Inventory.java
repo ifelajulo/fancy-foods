@@ -2,8 +2,6 @@ package fancyfoods.food;
 
 import java.util.List;
 
-import fancyfoods.api.Food;
-
 // food inventory
 public interface Inventory {
 

@@ -5,7 +5,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import fancyfoods.api.Food;
+import fancyfoods.food.Food;
 import fancyfoods.food.Inventory;
 
 public class InventoryImpl implements Inventory {

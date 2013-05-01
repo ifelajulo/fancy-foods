@@ -8,6 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>fancyfoods.web.nls.fr</artifactId>
+	<name>Fancy Foods - Localization - French</name>
 	<packaging>bundle</packaging>
 
 	<build>

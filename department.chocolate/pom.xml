@@ -18,9 +18,9 @@
 				<configuration>
 					<instructions>
 						<Import-Package>
-							org.osgi.service.blueprint,
-							fancyfoods.api,
-							fancyfoods.offers
+							fancyfoods.food,
+							fancyfoods.offers,
+							org.osgi.service.blueprint
 						</Import-Package>
 					</instructions>
 				</configuration>

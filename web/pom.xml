@@ -33,7 +33,7 @@
 							javax.naming,
 							javax.servlet,
 							javax.servlet.http,
-							fancyfoods.api,
+							fancyfoods.food,
 							fancyfoods.offers,
 							ch.qos.logback.classic
 						</Import-Package>

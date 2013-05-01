@@ -2,7 +2,7 @@ package fancyfoods.department.cheese.offers;
 
 import java.util.List;
 
-import fancyfoods.api.Food;
+import fancyfoods.food.Food;
 import fancyfoods.food.Inventory;
 import fancyfoods.offers.SpecialOffer;
 

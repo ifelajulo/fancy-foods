@@ -18,7 +18,6 @@
 				<configuration>
 					<instructions>
 						<Export-Package>
-							fancyfoods.api,
 							fancyfoods.food,
 							fancyfoods.offers
 						</Export-Package>

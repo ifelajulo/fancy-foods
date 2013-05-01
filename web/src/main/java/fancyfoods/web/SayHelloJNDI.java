@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fancyfoods.api.Food;
+import fancyfoods.food.Food;
 import fancyfoods.offers.CurrentOffers;
 import fancyfoods.offers.SpecialOffer;
 

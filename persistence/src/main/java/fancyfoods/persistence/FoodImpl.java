@@ -3,7 +3,7 @@ package fancyfoods.persistence;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import fancyfoods.api.Food;
+import fancyfoods.food.Food;
 
 @Entity(name = "FOOD")
 public class FoodImpl implements Food {

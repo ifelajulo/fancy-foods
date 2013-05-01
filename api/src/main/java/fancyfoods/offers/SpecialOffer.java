@@ -1,6 +1,6 @@
 package fancyfoods.offers;
 
-import fancyfoods.api.Food;
+import fancyfoods.food.Food;
 
 public interface SpecialOffer {
 	Food getOfferFood();
