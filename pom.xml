@@ -32,6 +32,8 @@
 		<module>web.nls.pl</module>
 		<module>runner.pax</module>
 		<module>config.logback</module>
+		<module>department.foreign</module>
+		<module>runner.remote.pax</module>
 	</modules>
 
 	<dependencyManagement>
@@ -70,6 +72,11 @@
 			<dependency>
 				<groupId>com.danielpacak</groupId>
 				<artifactId>fancyfoods.department.cheese</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.department.foreign</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
