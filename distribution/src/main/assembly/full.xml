@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
 	<id>full</id>
 	<formats>
-		<format>tar.gz</format>
+		<format>dir</format>
 		<format>zip</format>
 	</formats>
 	<includeBaseDirectory>false</includeBaseDirectory>
@@ -12,35 +12,34 @@
 	<dependencySets>
 		<!-- Include MCT launcher -->
 		<dependencySet>
-			<outputDirectory>/bin</outputDirectory>
+			<outputDirectory>/lib</outputDirectory>
 			<includes>
-				<include>gov.nasa.arc:gov.nasa.arc.mct.launcher</include>
+				<include>com.danielpacak:fancyfoods.launcher</include>
+
+				<include>org.apache.felix:org.apache.felix.framework</include>
 			</includes>
 		</dependencySet>
 		<!-- Include core MCT libraries -->
 		<dependencySet>
 			<useProjectArtifact>false</useProjectArtifact>
-			<outputDirectory>/lib</outputDirectory>
+			<outputDirectory>/bundle/system</outputDirectory>
 			<useTransitiveDependencies>false</useTransitiveDependencies>
 			<includes>
-				<include>gov.nasa.arc:gov.nasa.arc.mct.util</include>
-				<include>gov.nasa.arc:gov.nasa.arc.mct.core</include>
-				<include>gov.nasa.arc:gov.nasa.arc.mct.platform</include>
-				<include>gov.nasa.arc:gov.nasa.arc.mct.component.collection</include>
-				<include>gov.nasa.arc:gov.nasa.arc.mct.component.taxonomy</include>
-				<include>gov.nasa.arc:gov.nasa.arc.mct.component.executable-buttons</include>
-				<include>gov.nasa.arc:gov.nasa.arc.mct.component.import-export</include>
-				<include>gov.nasa.arc:gov.nasa.arc.mct.plotter</include>
-				<include>gov.nasa.arc:gov.nasa.arc.mct.component.plot</include>
+				<include>com.danielpacak:fancyfoods.api</include>
+
+				<include>org.apache.felix:org.apache.felix.gogo.command</include>
+				<include>org.apache.felix:org.apache.felix.gogo.runtime</include>
+				<include>org.apache.felix:org.apache.felix.gogo.shell</include>
 			</includes>
 		</dependencySet>
 		<!-- Include 3rd party libraries -->
 		<dependencySet>
 			<useProjectArtifact>false</useProjectArtifact>
-			<outputDirectory>/lib/ext</outputDirectory>
+			<outputDirectory>/bundle/ext</outputDirectory>
 			<includes>
-				<include>org.apache.felix:org.apache.felix.scr</include>
 				<include>org.slf4j:slf4j-api</include>
+				<include>ch.qos.logback:logback-core</include>
+				<include>ch.qos.logback:logback-classic</include>
 			</includes>
 		</dependencySet>
 	</dependencySets>

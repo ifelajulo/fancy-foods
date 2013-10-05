@@ -9,9 +9,6 @@
 	<artifactId>fancyfoods.runner.pax</artifactId>
 	<name>Fancy Foods - Runner - Pax</name>
 	<packaging>pom</packaging>
-	<properties>
-		<logback.version>1.0.10</logback.version>
-	</properties>
 
 	<dependencies>
 		<!-- JEE API -->
@@ -103,12 +100,10 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
-			<version>${logback.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>${logback.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.danielpacak</groupId>

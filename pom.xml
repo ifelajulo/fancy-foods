@@ -7,10 +7,11 @@
 	<artifactId>fancyfoods</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Fancy Food</name>
+	<name>Fancy Foods</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<logback.version>1.0.10</logback.version>
 	</properties>
 
 	<scm>
@@ -35,6 +36,7 @@
 		<module>department.foreign</module>
 		<module>runner.remote.pax</module>
 		<module>distribution</module>
+		<module>launcher</module>
 	</modules>
 
 	<dependencyManagement>
@@ -97,6 +99,27 @@
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.launcher</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<!-- OSGi Alliance -->
+			<dependency>
+				<groupId>org.osgi</groupId>
+				<artifactId>org.osgi.core</artifactId>
+				<version>4.3.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.osgi</groupId>
+				<artifactId>org.osgi.compendium</artifactId>
+				<version>4.3.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.apache.felix.framework</artifactId>
+				<version>4.2.1</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.geronimo.specs</groupId>
 				<artifactId>geronimo-servlet_2.5_spec</artifactId>
 				<version>1.2</version>
@@ -117,6 +140,17 @@
 				<artifactId>slf4j-api</artifactId>
 				<version>1.7.5</version>
 			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-core</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+
 			<!-- Testing -->
 			<dependency>
 				<groupId>junit</groupId>
