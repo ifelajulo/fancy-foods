@@ -34,6 +34,7 @@
 		<module>config.logback</module>
 		<module>department.foreign</module>
 		<module>runner.remote.pax</module>
+		<module>distribution</module>
 	</modules>
 
 	<dependencyManagement>

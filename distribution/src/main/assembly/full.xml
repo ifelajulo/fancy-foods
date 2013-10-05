@@ -1,0 +1,74 @@
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+	<id>full</id>
+	<formats>
+		<format>tar.gz</format>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+
+	<dependencySets>
+		<!-- Include MCT launcher -->
+		<dependencySet>
+			<outputDirectory>/bin</outputDirectory>
+			<includes>
+				<include>gov.nasa.arc:gov.nasa.arc.mct.launcher</include>
+			</includes>
+		</dependencySet>
+		<!-- Include core MCT libraries -->
+		<dependencySet>
+			<useProjectArtifact>false</useProjectArtifact>
+			<outputDirectory>/lib</outputDirectory>
+			<useTransitiveDependencies>false</useTransitiveDependencies>
+			<includes>
+				<include>gov.nasa.arc:gov.nasa.arc.mct.util</include>
+				<include>gov.nasa.arc:gov.nasa.arc.mct.core</include>
+				<include>gov.nasa.arc:gov.nasa.arc.mct.platform</include>
+				<include>gov.nasa.arc:gov.nasa.arc.mct.component.collection</include>
+				<include>gov.nasa.arc:gov.nasa.arc.mct.component.taxonomy</include>
+				<include>gov.nasa.arc:gov.nasa.arc.mct.component.executable-buttons</include>
+				<include>gov.nasa.arc:gov.nasa.arc.mct.component.import-export</include>
+				<include>gov.nasa.arc:gov.nasa.arc.mct.plotter</include>
+				<include>gov.nasa.arc:gov.nasa.arc.mct.component.plot</include>
+			</includes>
+		</dependencySet>
+		<!-- Include 3rd party libraries -->
+		<dependencySet>
+			<useProjectArtifact>false</useProjectArtifact>
+			<outputDirectory>/lib/ext</outputDirectory>
+			<includes>
+				<include>org.apache.felix:org.apache.felix.scr</include>
+				<include>org.slf4j:slf4j-api</include>
+			</includes>
+		</dependencySet>
+	</dependencySets>
+	<fileSets>
+		<fileSet>
+			<directory>${project.basedir}</directory>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+				<include>README</include>
+				<include>LICENSE*</include>
+				<include>NOTICE*</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>bin</directory>
+			<outputDirectory>/bin</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>conf</directory>
+			<outputDirectory>/conf</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>extras</directory>
+			<outputDirectory>/extras</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.directory}/site</directory>
+			<outputDirectory>docs</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>
