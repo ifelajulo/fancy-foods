@@ -219,7 +219,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.launcher</artifactId>
+			<artifactId>fancyfoods.distribution.launcher</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.danielpacak</groupId>

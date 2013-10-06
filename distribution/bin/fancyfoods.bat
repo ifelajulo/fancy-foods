@@ -1,1 +1,1 @@
-java -jar .\..\lib\fancyfoods.launcher-0.0.1-SNAPSHOT.jar
+java -jar .\..\lib\fancyfoods.distribution.launcher-0.0.1-SNAPSHOT.jar

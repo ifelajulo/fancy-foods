@@ -1,4 +1,4 @@
-package fancyfoods.launcher;
+package fancyfoods.distribution.launcher;
 
 import java.io.File;
 import java.io.FileReader;

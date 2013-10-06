@@ -10,6 +10,8 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.rules.TemporaryFolder;
 
+import fancyfoods.distribution.launcher.PropertiesFileConfiguration;
+
 /**
  * Tests for {@link PropertiesFileConfiguration}.
  */

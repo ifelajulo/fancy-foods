@@ -6,7 +6,7 @@
 		<artifactId>fancyfoods</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>fancyfoods.launcher</artifactId>
+	<artifactId>fancyfoods.distribution.launcher</artifactId>
 	<name>Fancy Foods - Launcher</name>
 
 	<build>
@@ -18,7 +18,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>fancyfoods.launcher.Launcher</mainClass>
+							<mainClass>fancyfoods.distribution.launcher.Launcher</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

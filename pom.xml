@@ -27,17 +27,18 @@
 		<module>business</module>
 		<module>department.chocolate</module>
 		<module>department.cheese</module>
+		<module>department.foreign</module>
 		<module>datasource</module>
 		<module>persistence</module>
 		<module>web</module>
 		<module>web.nls.fr</module>
 		<module>web.nls.pl</module>
-		<module>runner.pax</module>
 		<module>config.logback</module>
-		<module>department.foreign</module>
-		<module>runner.remote.pax</module>
+		<module>distribution.launcher</module>
 		<module>distribution</module>
-		<module>launcher</module>
+
+		<module>runner.pax</module>
+		<module>runner.remote.pax</module>
 	</modules>
 
 	<dependencyManagement>
@@ -101,7 +102,7 @@
 			</dependency>
 			<dependency>
 				<groupId>com.danielpacak</groupId>
-				<artifactId>fancyfoods.launcher</artifactId>
+				<artifactId>fancyfoods.distribution.launcher</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<!-- OSGi Alliance -->
