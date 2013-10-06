@@ -7,7 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>fancyfoods.distribution.launcher</artifactId>
-	<name>Fancy Foods - Launcher</name>
+	<name>Fancy Foods - Distribution - Launcher</name>
 
 	<build>
 		<plugins>
