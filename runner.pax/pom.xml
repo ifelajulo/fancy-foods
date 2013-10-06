@@ -24,36 +24,82 @@
 			<groupId>org.apache.geronimo.specs</groupId>
 			<artifactId>geronimo-jta_1.1_spec</artifactId>
 		</dependency>
-
+		<!-- Apache Aries -->
 		<dependency>
 			<groupId>org.apache.aries</groupId>
 			<artifactId>org.apache.aries.util</artifactId>
-			<version>1.0.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.proxy</groupId>
+			<artifactId>org.apache.aries.proxy.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.proxy</groupId>
+			<artifactId>org.apache.aries.proxy</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.jndi</groupId>
+			<artifactId>org.apache.aries.jndi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.quiesce</groupId>
+			<artifactId>org.apache.aries.quiesce.api</artifactId>
+		</dependency>
+		<!-- Apache Aries Blueprint -->
+		<dependency>
+			<groupId>org.apache.aries.blueprint</groupId>
+			<artifactId>org.apache.aries.blueprint.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.blueprint</groupId>
+			<artifactId>org.apache.aries.blueprint.core</artifactId>
+		</dependency>
+		<!-- Apache Aries JPA -->
+		<dependency>
+			<groupId>org.apache.aries.jpa</groupId>
+			<artifactId>org.apache.aries.jpa.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.jpa</groupId>
+			<artifactId>org.apache.aries.jpa.container</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.jpa</groupId>
+			<artifactId>org.apache.aries.jpa.container.context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.jpa</groupId>
+			<artifactId>org.apache.aries.jpa.blueprint.aries</artifactId>
+		</dependency>
+		<!-- Apache Aries Transaction -->
+		<dependency>
+			<groupId>org.apache.aries.transaction</groupId>
+			<artifactId>org.apache.aries.transaction.manager</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.transaction</groupId>
+			<artifactId>org.apache.aries.transaction.blueprint</artifactId>
+		</dependency>
+		<!-- Apache Aries Application -->
 		<dependency>
 			<groupId>org.apache.aries.application</groupId>
 			<artifactId>org.apache.aries.application.utils</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.aries.application</groupId>
 			<artifactId>org.apache.aries.application.api</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.aries.blueprint</groupId>
-			<artifactId>org.apache.aries.blueprint.api</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.aries.application</groupId>
-			<artifactId>org.apache.aries.application.management</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.aries.application</groupId>
 			<artifactId>org.apache.aries.application.install</artifactId>
-			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.management</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.default.local.platform</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.aries.application</groupId>
@@ -63,34 +109,11 @@
 		<dependency>
 			<groupId>org.apache.aries.application</groupId>
 			<artifactId>org.apache.aries.application.resolver.noop</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.aries.application</groupId>
-			<artifactId>org.apache.aries.application.default.local.platform</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.aries.application</groupId>
 			<artifactId>org.apache.aries.application.runtime</artifactId>
 			<version>1.0.0</version>
-		</dependency>
-		<!-- Apache Aries Transaction -->
-		<dependency>
-			<groupId>org.apache.aries.transaction</groupId>
-			<artifactId>org.apache.aries.transaction.manager</artifactId>
-			<version>1.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.aries.transaction</groupId>
-			<artifactId>org.apache.aries.transaction.blueprint</artifactId>
-			<version>1.0.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.aries.proxy</groupId>
-			<artifactId>org.apache.aries.proxy</artifactId>
-			<version>[1.0.0,2.0.0)</version>
 		</dependency>
 		<!-- Logger -->
 		<dependency>
@@ -112,83 +135,48 @@
 		<dependency>
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.enterprise</artifactId>
-			<version>4.2.0</version>
 		</dependency>
-
+		<!-- Pax Web -->
 		<dependency>
 			<groupId>org.ops4j.pax.web</groupId>
 			<artifactId>pax-web-jetty-bundle</artifactId>
-			<version>0.8.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.ops4j.pax.web</groupId>
 			<artifactId>pax-web-extender-war</artifactId>
-			<version>0.8.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.ops4j.pax.web</groupId>
 			<artifactId>pax-web-jsp</artifactId>
-			<version>0.8.1</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.aries.jndi</groupId>
-			<artifactId>org.apache.aries.jndi</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.web.nls.pl</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.web.nls.fr</artifactId>
-		</dependency>
+		<!-- JDBC Driver -->
 		<dependency>
 			<groupId>org.apache.derby</groupId>
 			<artifactId>derby</artifactId>
-			<!-- FIXME Check the latest version -->
-			<version>10.9.1.0</version>
 		</dependency>
-		<!-- Apache Aries - JPA -->
-		<dependency>
-			<groupId>org.apache.aries.jpa</groupId>
-			<artifactId>org.apache.aries.jpa.api</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.aries.jpa</groupId>
-			<artifactId>org.apache.aries.jpa.blueprint.aries</artifactId>
-			<version>1.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.aries.jpa</groupId>
-			<artifactId>org.apache.aries.jpa.container</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.aries.jpa</groupId>
-			<artifactId>org.apache.aries.jpa.container.context</artifactId>
-			<version>[1.0.0,2.0.0)</version>
-		</dependency>
+		<!-- Open JPA -->
 		<dependency>
 			<groupId>org.apache.openjpa</groupId>
 			<artifactId>openjpa</artifactId>
-			<version>2.0.0</version>
 		</dependency>
-		<!-- <dependency> <groupId>net.sourceforge.serp</groupId> <artifactId>serp</artifactId> 
-			<version>1.14.1</version> </dependency> -->
 		<dependency>
 			<groupId>net.sourceforge.serp</groupId>
 			<artifactId>com.springsource.serp</artifactId>
-			<version>1.13.1</version>
 		</dependency>
 		<!-- Apache Commons -->
 		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
-			<version>2.5</version>
 		</dependency>
-		<!-- Internal -->
+		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+		</dependency>
+		<!-- Fancy Foods -->
 		<dependency>
 			<groupId>com.danielpacak</groupId>
 			<artifactId>fancyfoods.api</artifactId>
@@ -215,10 +203,21 @@
 		</dependency>
 		<dependency>
 			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.department.foreign</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
 			<artifactId>fancyfoods.web</artifactId>
 			<type>war</type>
 		</dependency>
-
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.web.nls.pl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.web.nls.fr</artifactId>
+		</dependency>
 	</dependencies>
 
 </project>

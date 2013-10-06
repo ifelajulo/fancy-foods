@@ -25,7 +25,17 @@
 			<outputDirectory>/bundle/system</outputDirectory>
 			<useTransitiveDependencies>false</useTransitiveDependencies>
 			<includes>
+				<include>com.danielpacak:fancyfoods.config.logback</include>
 				<include>com.danielpacak:fancyfoods.api</include>
+				<include>com.danielpacak:fancyfoods.business</include>
+				<include>com.danielpacak:fancyfoods.datasource</include>
+				<include>com.danielpacak:fancyfoods.persistence</include>
+				<include>com.danielpacak:fancyfoods.department.cheese</include>
+				<include>com.danielpacak:fancyfoods.department.chocolate</include>
+				<include>com.danielpacak:fancyfoods.department.foreign</include>
+				<include>com.danielpacak:fancyfoods.web</include>
+				<include>com.danielpacak:fancyfoods.web.nls.pl</include>
+				<include>com.danielpacak:fancyfoods.web.nls.fr</include>
 
 				<include>org.apache.felix:org.apache.felix.gogo.command</include>
 				<include>org.apache.felix:org.apache.felix.gogo.runtime</include>
@@ -37,9 +47,61 @@
 			<useProjectArtifact>false</useProjectArtifact>
 			<outputDirectory>/bundle/ext</outputDirectory>
 			<includes>
+				<include>org.osgi:org.osgi.compendium</include>
+				<include>org.osgi:org.osgi.enterprise</include>
+
+				<include>org.apache.geronimo.specs:geronimo-servlet_2.5_spec</include>
+				<include>org.apache.geronimo.specs:geronimo-jpa_2.0_spec</include>
+				<include>org.apache.geronimo.specs:geronimo-jta_1.1_spec</include>
+
 				<include>org.slf4j:slf4j-api</include>
+				<include>org.slf4j:jcl-over-slf4j</include>
 				<include>ch.qos.logback:logback-core</include>
 				<include>ch.qos.logback:logback-classic</include>
+
+				<include>commons-collections:commons-collections</include>
+				<include>commons-lang:commons-lang</include>
+				<include>commons-pool:commons-pool</include>
+				<include>commons-fileupload:commons-fileupload</include>
+				<include>commons-io:commons-io</include>
+
+				<include>org.ops4j.pax.web:pax-web-jetty-bundle</include>
+				<include>org.ops4j.pax.web:pax-web-extender-war</include>
+				<include>org.ops4j.pax.web:pax-web-jsp</include>
+
+				<include>org.apache.openjpa:openjpa</include>
+				<include>net.sourceforge.serp:com.springsource.serp</include>
+
+				<include>org.apache.aries:org.apache.aries.util</include>
+				<include>org.apache.aries.proxy:org.apache.aries.proxy.api</include>
+				<include>org.apache.aries.proxy:org.apache.aries.proxy</include>
+				<include>org.apache.aries.jndi:org.apache.aries.jndi</include>
+				<include>org.apache.aries.quiesce:org.apache.aries.quiesce.api</include>
+
+				<include>org.apache.aries.blueprint:org.apache.aries.blueprint.api</include>
+				<include>org.apache.aries.blueprint:org.apache.aries.blueprint.core</include>
+
+				<include>org.apache.aries.jpa:org.apache.aries.jpa.api</include>
+				<include>org.apache.aries.jpa:org.apache.aries.jpa.container</include>
+				<include>org.apache.aries.jpa:org.apache.aries.jpa.container.context</include>
+				<include>org.apache.aries.jpa:org.apache.aries.jpa.blueprint.aries</include>
+
+				<include>org.apache.aries.transaction:org.apache.aries.transaction.manager</include>
+				<include>org.apache.aries.transaction:org.apache.aries.transaction.blueprint</include>
+
+				<!--
+				<include>org.apache.aries.application:org.apache.aries.application.utils</include>
+				<include>org.apache.aries.application:org.apache.aries.application.api</include>
+				<include>org.apache.aries.application:org.apache.aries.application.install</include>
+				<include>org.apache.aries.application:org.apache.aries.application.management</include>
+				<include>org.apache.aries.application:org.apache.aries.application.default.local.platform</include>
+				<include>org.apache.aries.application:org.apache.aries.application.resolver.noop</include>
+				-->
+
+				<include>org.json:com.springsource.org.json</include>
+				<include>org.apache.felix:org.apache.felix.webconsole</include>
+
+				<include>org.apache.derby:derby</include>
 			</includes>
 		</dependencySet>
 	</dependencySets>
@@ -58,8 +120,8 @@
 			<outputDirectory>/bin</outputDirectory>
 		</fileSet>
 		<fileSet>
-			<directory>conf</directory>
-			<outputDirectory>/conf</outputDirectory>
+			<directory>config</directory>
+			<outputDirectory>/config</outputDirectory>
 		</fileSet>
 		<fileSet>
 			<directory>extras</directory>

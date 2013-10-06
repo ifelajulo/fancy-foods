@@ -39,6 +39,14 @@
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.core</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.compendium</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.enterprise</artifactId>
+		</dependency>
 		<!-- OSGi Framework -->
 		<dependency>
 			<groupId>org.apache.felix</groupId>
@@ -60,6 +68,156 @@
 			<version>0.10.0</version>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.webconsole</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>com.springsource.org.json</artifactId>
+		</dependency>
+		<!-- JEE API -->
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-servlet_2.5_spec</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-jpa_2.0_spec</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-jta_1.1_spec</artifactId>
+		</dependency>
+		<!-- Apache Commons -->
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+		<!-- Pax Web -->
+		<dependency>
+			<groupId>org.ops4j.pax.web</groupId>
+			<artifactId>pax-web-jetty-bundle</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.web</groupId>
+			<artifactId>pax-web-extender-war</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.web</groupId>
+			<artifactId>pax-web-jsp</artifactId>
+		</dependency>
+		<!-- Open JPA -->
+		<dependency>
+			<groupId>org.apache.openjpa</groupId>
+			<artifactId>openjpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.serp</groupId>
+			<artifactId>com.springsource.serp</artifactId>
+		</dependency>
+		<!-- Apache Aries -->
+		<dependency>
+			<groupId>org.apache.aries</groupId>
+			<artifactId>org.apache.aries.util</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.proxy</groupId>
+			<artifactId>org.apache.aries.proxy.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.proxy</groupId>
+			<artifactId>org.apache.aries.proxy</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.jndi</groupId>
+			<artifactId>org.apache.aries.jndi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.quiesce</groupId>
+			<artifactId>org.apache.aries.quiesce.api</artifactId>
+		</dependency>
+		<!-- Apache Aries Blueprint -->
+		<dependency>
+			<groupId>org.apache.aries.blueprint</groupId>
+			<artifactId>org.apache.aries.blueprint.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.blueprint</groupId>
+			<artifactId>org.apache.aries.blueprint.core</artifactId>
+		</dependency>
+		<!-- Apache Aries JPA -->
+		<dependency>
+			<groupId>org.apache.aries.jpa</groupId>
+			<artifactId>org.apache.aries.jpa.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.jpa</groupId>
+			<artifactId>org.apache.aries.jpa.container</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.jpa</groupId>
+			<artifactId>org.apache.aries.jpa.container.context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.jpa</groupId>
+			<artifactId>org.apache.aries.jpa.blueprint.aries</artifactId>
+		</dependency>
+		<!-- Apache Aries Transaction -->
+		<dependency>
+			<groupId>org.apache.aries.transaction</groupId>
+			<artifactId>org.apache.aries.transaction.manager</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.transaction</groupId>
+			<artifactId>org.apache.aries.transaction.blueprint</artifactId>
+		</dependency>
+		<!-- Apache Aries Application -->
+		<dependency>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.utils</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.install</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.management</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.default.local.platform</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.application</groupId>
+			<artifactId>org.apache.aries.application.resolver.noop</artifactId>
+		</dependency>
+		<!-- Fancy Foods -->
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.config.logback</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>com.danielpacak</groupId>
 			<artifactId>fancyfoods.launcher</artifactId>
 		</dependency>
@@ -71,11 +229,47 @@
 			<groupId>com.danielpacak</groupId>
 			<artifactId>fancyfoods.business</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.datasource</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.persistence</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.department.cheese</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.department.chocolate</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.department.foreign</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.web</artifactId>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.web.nls.pl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.web.nls.fr</artifactId>
+		</dependency>
 		<!-- bundle/ext -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -84,6 +278,11 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
+		</dependency>
+		<!-- JDBC Drivers -->
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
 		</dependency>
 	</dependencies>
 
