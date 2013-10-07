@@ -28,6 +28,7 @@
 		<module>department.cheese</module>
 		<module>department.foreign</module>
 		<module>datasource</module>
+		<module>datasource.mysql</module>
 		<module>persistence</module>
 		<module>web</module>
 		<module>web.nls.fr</module>
@@ -56,6 +57,11 @@
 			<dependency>
 				<groupId>com.danielpacak</groupId>
 				<artifactId>fancyfoods.datasource</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.datasource.mysql</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
@@ -120,6 +126,7 @@
 				<artifactId>org.osgi.enterprise</artifactId>
 				<version>4.2.0</version>
 			</dependency>
+			<!-- Apache Felix Web Management Console -->
 			<dependency>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>org.apache.felix.framework</artifactId>
@@ -134,6 +141,24 @@
 				<groupId>org.json</groupId>
 				<artifactId>com.springsource.org.json</artifactId>
 				<version>1.0.0</version>
+			</dependency>
+			<!-- Apache Felix Configuration Admin Service -->
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.apache.felix.configadmin</artifactId>
+				<version>1.6.0</version>
+			</dependency>
+			<!-- Apache Felix File Install -->
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.apache.felix.fileinstall</artifactId>
+				<version>3.2.6</version>
+			</dependency>
+			<!-- Apache Felix Metatype Service -->
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.apache.felix.metatype</artifactId>
+				<version>1.0.8</version>
 			</dependency>
 			<!-- Apache Commons -->
 			<dependency>
