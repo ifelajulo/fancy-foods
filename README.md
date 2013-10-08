@@ -1,9 +1,49 @@
-fancy-foods
-===========
-
+# Fancy Foods
 The sample application presented in the Enterprise OSGi in Action book.
 
 [![Build Status](https://buildhive.cloudbees.com/job/danielpacak/job/fancy-foods/badge/icon)](https://buildhive.cloudbees.com/job/danielpacak/job/fancy-foods/)
+
+## Download
+Fancy Foods is distributed in several formats for your convenience. Use a source code archive if you intend to build
+Fancy Foods yourself. Otherwise, simply pick a ready-made binary distribution and follow the installation instruction
+given below.
+
+## Installation
+Fancy Foods is a Java application, so you must have Java installed in order to proceed. Additional optional
+installation steps are listed after the platform specific instructions.
+
+### Windows
+1. Unzip the distribution archive, i.e. fancy-foods-1.0.0-full.zip to the directory you wish to install Fancy Foods.
+   These instructions assume you chose C:\Program Files. The subdirectory fancy-foods-1.0.0-full will be created from
+   the archive.
+2. Open a new command prompt (Winkey + R then type cmd) and change directory to C:\Program Files\fancy-foods-1.0.0-full.
+3. Run fancyfoods.bat to start the application.
+4. Open the following URL in your browser http://localhost:8080/fancyfoods.web/SayHelloJNDI to verify that it is correctly
+   installed.
+
+### Unix-based Operating Systems (Linux, Solaris and Mac OS X)
+1. Extract the distribution archive, i.e. fancy-foods-1.0.0-full.tar.gz to the directory you wish to install Fancy Foods.
+   These instructions assume you chose /usr/local. The subdirectory fancy-foods-1.0.0-full.zip will be created from the
+   archive.
+2. Change directory to /usr/local/fancy-foods-1.0.0-full
+3. Run fancyfoods.sh to start the application.
+4. Open the following URL in your browser http://localhost:8080/fancyfoods.web/SayHelloJNDI to verify that it is correctly
+   installed.
+
+## Optional Configuration
+Fancy Foods will start and work with the default configuration, however there situations when you will need to configure
+settings. The following sections refer to what is available.
+
+### Settings
+Fancy Foods has a config/fancyfoods.properties settings file located in the installation directory that configure
+environmental specifics such as:
+* HTTP server
+* JDBC data sources
+* other configuration properties
+
+   
+   
+--------- deprecated ---------------
 
 To get the application up and running on your local machine, follow these steps:
 
