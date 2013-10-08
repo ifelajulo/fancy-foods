@@ -1,0 +1,1 @@
+java -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,address=8000,suspend=n -Dfelix.fileinstall.dir=./../config -jar ./../lib/fancyfoods.distribution.launcher-0.0.1-SNAPSHOT.jar

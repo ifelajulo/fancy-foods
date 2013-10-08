@@ -20,6 +20,10 @@
 		<servlet-name>ViewStatusMessages</servlet-name>
 		<servlet-class>ch.qos.logback.classic.ViewStatusMessagesServlet</servlet-class>
 	</servlet>
+	<servlet>
+	    <servlet-name>DataSourceServlet</servlet-name>
+	    <servlet-class>fancyfoods.web.DataSourceServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>ViewStatusMessages</servlet-name>
 		<url-pattern>/lbClassicStatus</url-pattern>
@@ -35,5 +39,9 @@
 	<servlet-mapping>
 		<servlet-name>BuyFood</servlet-name>
 		<url-pattern>/BuyFood</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	    <servlet-name>DataSourceServlet</servlet-name>
+	    <url-pattern>/data-source</url-pattern>
 	</servlet-mapping>
 </web-app>

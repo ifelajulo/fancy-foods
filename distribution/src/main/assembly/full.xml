@@ -108,6 +108,7 @@
 				<include>org.apache.felix:org.apache.felix.metatype</include>
 
 				<include>org.apache.derby:derby</include>
+				<include>mysql:mysql-connector-java</include>
 			</includes>
 		</dependencySet>
 	</dependencySets>
