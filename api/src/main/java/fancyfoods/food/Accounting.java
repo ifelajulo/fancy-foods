@@ -1,9 +1,18 @@
 package fancyfoods.food;
 
+import java.util.List;
+
 public interface Accounting {
 
-	Customer getCustomer(String name);
+    /**
+     * List all customers known to this accounting department.
+     * 
+     * @return list of customers
+     */
+    List<Customer> getCustomers();
 
-	void chargeToAccount(String name, double purchaseAmount);
+    Customer getCustomer(String name);
+
+    void chargeToAccount(String name, double purchaseAmount);
 
 }

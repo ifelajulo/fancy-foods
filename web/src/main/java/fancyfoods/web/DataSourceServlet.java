@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.XADataSource;
 
+import fancyfoods.food.Accounting;
+
 // for testing datasource
 public class DataSourceServlet extends HttpServlet {
 
@@ -18,6 +20,12 @@ public class DataSourceServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             InitialContext ctx = new InitialContext();
+            String jndiName = "osgi:service/" + Accounting.class.getName();
+            Accounting accounting =  (Accounting) ctx.lookup(jndiName);
+            System.out.println(accounting.getCustomers());
+
+            
+            
             XADataSource dataSource = (XADataSource) ctx.lookup("osgi:service/jdbc/xafancyfoodsdb");
             System.out.println(dataSource.getXAConnection());
             System.out.println("success");
