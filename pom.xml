@@ -29,6 +29,7 @@
 		<module>department.foreign</module>
 		<module>datasource</module>
 		<module>datasource.mysql</module>
+		<module>datasource.mongodb</module>
 		<module>persistence</module>
 		<module>web</module>
 		<module>web.nls.fr</module>
@@ -62,6 +63,11 @@
 			<dependency>
 				<groupId>com.danielpacak</groupId>
 				<artifactId>fancyfoods.datasource.mysql</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.danielpacak</groupId>
+				<artifactId>fancyfoods.datasource.mongodb</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
@@ -238,6 +244,11 @@
 				<groupId>org.apache.aries.blueprint</groupId>
 				<artifactId>org.apache.aries.blueprint.core</artifactId>
 				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.aries.blueprint</groupId>
+				<artifactId>org.apache.aries.blueprint.cm</artifactId>
+				<version>1.0.1</version>
 			</dependency>
 			<!-- Apache Aries JPA -->
 			<dependency>
