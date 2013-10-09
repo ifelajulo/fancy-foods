@@ -25,7 +25,6 @@
 			<outputDirectory>/bundle/system</outputDirectory>
 			<useTransitiveDependencies>false</useTransitiveDependencies>
 			<includes>
-				<include>com.danielpacak:fancyfoods.config.logback</include>
 				<include>com.danielpacak:fancyfoods.api</include>
 				<include>com.danielpacak:fancyfoods.business</include>
 				<include>com.danielpacak:fancyfoods.datasource</include>

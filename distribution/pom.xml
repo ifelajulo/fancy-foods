@@ -235,10 +235,6 @@
 		<!-- Fancy Foods -->
 		<dependency>
 			<groupId>com.danielpacak</groupId>
-			<artifactId>fancyfoods.config.logback</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.danielpacak</groupId>
 			<artifactId>fancyfoods.distribution.launcher</artifactId>
 		</dependency>
 		<dependency>

@@ -1,1 +1,1 @@
-java -Dfelix.fileinstall.dir=./../config -jar ./../lib/fancyfoods.distribution.launcher-0.0.1-SNAPSHOT.jar
+java -Dfelix.fileinstall.dir=./../config -Dlogback.configurationFile=./../config/logback.xml -jar ./../lib/fancyfoods.distribution.launcher-0.0.1-SNAPSHOT.jar
