@@ -47,30 +47,33 @@ settings. The following sections refer to what is available.
 ### Settings
 Fancy Foods has a *config/fancyfoods.properties* settings file located in the installation directory that configure
 environmental specifics such as:
+
 * HTTP server
 * JDBC data sources
 * other configuration properties
 
-   
-   
---------- deprecated ---------------
+## Build
+A quick guide for getting the Fancy Foods source, then building the resulting Fancy Foods instance; either without
+or with [Eclipse](http://www.eclipse.org).
 
-To get the application up and running on your local machine, follow these steps:
+> Before you begin, you need to have the following tools installed on your system:
+>
+> * Java Development Kit 6 or higher; JDK 6 is recommended.
+> * Maven 3.0.4 or later; enforced by the Fancy Foods parent pom.
+> * A Git client.
 
-1. Make sure you have JDK 6 installed.
-2. Make sure you have Maven 3 installed.
-3. Clone repository `git clone https://github.com/danielpacak/fancy-foods.git`.
-4. Build the project `mvn install`.
-5. Launch Apache Felix OSGi framework by running the `felix.sh` script in the `runner-pax` directory.
-6. Open the following URL in your browser http://localhost:8080/fancyfoods.web/SayHelloJNDI.
-7. If everything went well, you should see the application in your browser.
+1. Clone the source from GitHub repository *git clone https://github.com/danielpacak/fancy-foods.git* to the working directory.
+   These instructions assume you chose *C:\development\github\fancy-foods*.
+2. Change directory to *C:\development\github\fancy-foods* and build the project *mvn install*.
+3. Launch Fancy Foods with Maven by running the *felix.bat* script in the *C:\development\github\fancy-foods\runner.pax* directory.
+4. Launch Fancy Foods by running the *fancyfoods.bat* script in the
+   *C:\development\github\fancy-foods\distribution\target\fancyfoods.distribution-0.0.1-SNAPSHOT-full/bin* directory.
+5. Open the following URL in your browser http://localhost:8080/fancyfoods.web/SayHelloJNDI.
 
-Note that I'm using a different approach for running the sample application than presented in the book.
-If you take a look at the [felix.sh](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/felix.sh)
-script, you'll see that it starts up the OSGi runtime (Apache Felix by default) and installs all
-dependencies listed in [pom.xml](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/pom.xml)
-as OSGi bundles.
+> The [felix.sh](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/felix.sh)
+> script starts up the OSGi runtime (Apache Felix by default) and installs all dependencies listed in
+> [pom.xml](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/pom.xml) as OSGi bundles.
 
-To change the default OSGi runtime (from [Apache Felix](http://felix.apache.org/) to
-[Eclipse Equinox](http://www.eclipse.org/equinox)) edit [felix.sh](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/felix.sh)
-and set the `FRAMEWORK` environment variable to `equinox`.
+> To change the default OSGi runtime (from [Apache Felix](http://felix.apache.org/) to
+> [Eclipse Equinox](http://www.eclipse.org/equinox)) edit [felix.sh](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/felix.sh)
+> and set the `FRAMEWORK` environment variable to `equinox`.
