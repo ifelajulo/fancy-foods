@@ -67,6 +67,7 @@
 			<artifactId>org.apache.felix.gogo.shell</artifactId>
 			<version>0.10.0</version>
 		</dependency>
+		<!-- Apache Felix Web Management Console -->
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.webconsole</artifactId>
@@ -74,6 +75,21 @@
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>com.springsource.org.json</artifactId>
+		</dependency>
+		<!-- Apache Felix Configuration Admin Service -->
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.configadmin</artifactId>
+		</dependency>
+		<!-- Apache Felix File Install -->
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.fileinstall</artifactId>
+		</dependency>
+		<!-- Apache Felix Metatype Service -->
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.metatype</artifactId>
 		</dependency>
 		<!-- JEE API -->
 		<dependency>
@@ -161,6 +177,10 @@
 			<groupId>org.apache.aries.blueprint</groupId>
 			<artifactId>org.apache.aries.blueprint.core</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.aries.blueprint</groupId>
+			<artifactId>org.apache.aries.blueprint.cm</artifactId>
+		</dependency>
 		<!-- Apache Aries JPA -->
 		<dependency>
 			<groupId>org.apache.aries.jpa</groupId>
@@ -235,6 +255,14 @@
 		</dependency>
 		<dependency>
 			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.datasource.mysql</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.datasource.mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
 			<artifactId>fancyfoods.persistence</artifactId>
 		</dependency>
 		<dependency>
@@ -283,6 +311,10 @@
 		<dependency>
 			<groupId>org.apache.derby</groupId>
 			<artifactId>derby</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 	</dependencies>
 

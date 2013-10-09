@@ -191,6 +191,10 @@
 		</dependency>
 		<dependency>
 			<groupId>com.danielpacak</groupId>
+			<artifactId>fancyfoods.datasource.mysql</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.danielpacak</groupId>
 			<artifactId>fancyfoods.persistence</artifactId>
 		</dependency>
 		<dependency>

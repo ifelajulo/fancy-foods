@@ -31,8 +31,7 @@ public class InventoryImpl implements Inventory {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Food> getFoodsWhoseNameContains(String name, int maxResults) {
-		String query = "SELECT f FROM FOOD f WHERE f.name LIKE '%" + name
-				+ "%' ORDER BY f.quantity DESC";
+		String query = "SELECT f FROM FOOD f WHERE f.name LIKE '%" + name+ "%' ORDER BY f.quantity DESC";
 		Query q = em.createQuery(query);
 		q.setMaxResults(maxResults);
 		return q.getResultList();

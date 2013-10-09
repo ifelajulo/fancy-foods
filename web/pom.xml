@@ -35,7 +35,8 @@
 							javax.servlet.http,
 							fancyfoods.food,
 							fancyfoods.offers,
-							ch.qos.logback.classic
+							ch.qos.logback.classic,
+							javax.sql
 						</Import-Package>
 					</instructions>
 					<supportedProjectTypes>

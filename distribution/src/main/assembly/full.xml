@@ -29,6 +29,8 @@
 				<include>com.danielpacak:fancyfoods.api</include>
 				<include>com.danielpacak:fancyfoods.business</include>
 				<include>com.danielpacak:fancyfoods.datasource</include>
+				<include>com.danielpacak:fancyfoods.datasource.mysql</include>
+				<include>com.danielpacak:fancyfoods.datasource.mongodb</include>
 				<include>com.danielpacak:fancyfoods.persistence</include>
 				<include>com.danielpacak:fancyfoods.department.cheese</include>
 				<include>com.danielpacak:fancyfoods.department.chocolate</include>
@@ -80,6 +82,7 @@
 
 				<include>org.apache.aries.blueprint:org.apache.aries.blueprint.api</include>
 				<include>org.apache.aries.blueprint:org.apache.aries.blueprint.core</include>
+				<include>org.apache.aries.blueprint:org.apache.aries.blueprint.cm</include>
 
 				<include>org.apache.aries.jpa:org.apache.aries.jpa.api</include>
 				<include>org.apache.aries.jpa:org.apache.aries.jpa.container</include>
@@ -100,8 +103,12 @@
 
 				<include>org.json:com.springsource.org.json</include>
 				<include>org.apache.felix:org.apache.felix.webconsole</include>
+				<include>org.apache.felix:org.apache.felix.configadmin</include>
+				<include>org.apache.felix:org.apache.felix.fileinstall</include>
+				<include>org.apache.felix:org.apache.felix.metatype</include>
 
 				<include>org.apache.derby:derby</include>
+				<include>mysql:mysql-connector-java</include>
 			</includes>
 		</dependencySet>
 	</dependencySets>

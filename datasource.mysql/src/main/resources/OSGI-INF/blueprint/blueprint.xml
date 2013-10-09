@@ -1,0 +1,36 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xmlns:cm="http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.1.0">
+
+	<cm:property-placeholder persistent-id="fancyfoods.datasource.mysql" update-strategy="reload">
+		<cm:default-properties>
+			<cm:property name="jdbc.datasource.user" value="fancyfoods" />
+			<cm:property name="jdbc.datasource.password" value="cipher" />
+			<cm:property name="jdbc.datasource.url" value="jdbc:mysql://localhost:3306/fancyfoods" />
+		</cm:default-properties>
+	</cm:property-placeholder>
+
+	<bean id="mysqlDataSource" class="com.mysql.jdbc.jdbc2.optional.MysqlDataSource">
+		<property name="user" value="${jdbc.datasource.user}" />
+		<property name="password" value="${jdbc.datasource.password}" />
+		<property name="url" value="${jdbc.datasource.url}" />
+	</bean>
+
+	<bean id="mysqlXADataSource" class="com.mysql.jdbc.jdbc2.optional.MysqlXADataSource">
+		<property name="user" value="${jdbc.datasource.user}" />
+		<property name="password" value="${jdbc.datasource.password}" />
+		<property name="url" value="${jdbc.datasource.url}" />
+	</bean>
+
+	<service ref="mysqlDataSource" interface="javax.sql.DataSource">
+		<service-properties>
+			<entry key="osgi.jndi.service.name" value="jdbc/fancyfoodsdb" />
+		</service-properties>
+	</service>
+
+	<service ref="mysqlXADataSource" interface="javax.sql.XADataSource">
+		<service-properties>
+			<entry key="osgi.jndi.service.name" value="jdbc/xafancyfoodsdb" />
+		</service-properties>
+	</service>
+
+</blueprint>
