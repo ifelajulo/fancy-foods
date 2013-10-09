@@ -4,7 +4,7 @@ The sample application presented in the Enterprise OSGi in Action book.
 [![Build Status](https://buildhive.cloudbees.com/job/danielpacak/job/fancy-foods/badge/icon)](https://buildhive.cloudbees.com/job/danielpacak/job/fancy-foods/)
 
 ## Download
-Fancy Foods is distributed in several formats for your convenience. Use a source code archive if you intend to build
+Fancy Foods is distributed in several formats for your convenience. Use a source code archive if you intend to [build](#build)
 Fancy Foods yourself. Otherwise, simply pick a ready-made binary distribution and follow the installation instruction
 given below.
 
@@ -65,15 +65,16 @@ or with [Eclipse](http://www.eclipse.org).
 1. Clone the source from GitHub repository *git clone https://github.com/danielpacak/fancy-foods.git* to the working directory.
    These instructions assume you chose *C:\development\github\fancy-foods*.
 2. Change directory to *C:\development\github\fancy-foods* and build the project *mvn install*.
-3. Launch Fancy Foods with Maven by running the *felix.bat* script in the *C:\development\github\fancy-foods\runner.pax* directory.
-4. Launch Fancy Foods by running the *fancyfoods.bat* script in the
+3. Launch Fancy Foods...
+  * (with Maven) ...by running the *felix.bat* script in the *C:\development\github\fancy-foods\runner.pax* directory.
+  * (or) ...by running the *fancyfoods.bat* script in the
    *C:\development\github\fancy-foods\distribution\target\fancyfoods.distribution-0.0.1-SNAPSHOT-full/bin* directory.
-5. Open the following URL in your browser http://localhost:8080/fancyfoods.web/SayHelloJNDI.
+5. Open the following URL in your browser *http://localhost:8080/fancyfoods.web/SayHelloJNDI*.
 
-> The [felix.sh](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/felix.sh)
+> The [felix.bat](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/felix.bat)
 > script starts up the OSGi runtime (Apache Felix by default) and installs all dependencies listed in
 > [pom.xml](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/pom.xml) as OSGi bundles.
 
 > To change the default OSGi runtime (from [Apache Felix](http://felix.apache.org/) to
-> [Eclipse Equinox](http://www.eclipse.org/equinox)) edit [felix.sh](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/felix.sh)
+> [Eclipse Equinox](http://www.eclipse.org/equinox)) edit [felix.bat](https://raw.github.com/danielpacak/fancy-foods/master/runner.pax/felix.sh)
 > and set the `FRAMEWORK` environment variable to `equinox`.
