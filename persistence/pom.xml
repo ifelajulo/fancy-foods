@@ -18,8 +18,8 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
+						<Bundle-Version>1.0.0</Bundle-Version>
 						<Meta-Persistence>META-INF/persistence.xml</Meta-Persistence>
-						<Private-Package>fancyfoods.persistence</Private-Package>
 						<Import-Package>
 							fancyfoods.food,
 							javax.persistence,

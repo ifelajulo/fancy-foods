@@ -7,7 +7,7 @@
 	</appender>
 
 	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
-		<file>./../lib/fancyfoods.log</file>
+		<file>./../log/fancyfoods.log</file>
 		<encoder>
 			<pattern>%d{HH:mm:ss}|-%level [%thread] %logger %msg%n</pattern>
 		</encoder>
