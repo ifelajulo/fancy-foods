@@ -18,6 +18,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
+						<Bundle-Version>1.0.0</Bundle-Version>
 						<Fragment-Host>com.danielpacak.fancyfoods.web</Fragment-Host>
 					</instructions>
 				</configuration>

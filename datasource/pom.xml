@@ -9,6 +9,7 @@
 	<artifactId>fancyfoods.datasource</artifactId>
 	<name>Fancy Foods - Datasource</name>
 	<packaging>bundle</packaging>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -17,6 +18,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
+						<Bundle-Version>1.0.0</Bundle-Version>
 						<Import-Package>
 							javax.sql,
 							org.apache.derby.jdbc,

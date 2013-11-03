@@ -17,6 +17,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
+						<Bundle-Version>1.0.0</Bundle-Version>
 						<Import-Package>
 							fancyfoods.food,
 							fancyfoods.offers,
